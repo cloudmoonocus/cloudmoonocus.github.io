@@ -1,0 +1,1482 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Web进阶笔记, Cloudmoon">
+    <meta name="description" content="Cloudmoon的个人前端技术博客">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Web进阶笔记 | Cloudmoon</title>
+    <link rel="icon" type="image/jpeg" href="https://s3.bmp.ovh/imgs/2022/05/04/6cd9c94cf5590833.jpeg">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head>
+
+
+
+   <style>
+    body{
+       background-image: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://s3.bmp.ovh/imgs/2022/05/04/6cd9c94cf5590833.jpeg" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Cloudmoon</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://s3.bmp.ovh/imgs/2022/05/04/6cd9c94cf5590833.jpeg" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Cloudmoon</div>
+        <div class="logo-desc">
+            
+            Cloudmoon的个人前端技术博客
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/CloudmoonOCUS" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/CloudmoonOCUS" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s3.bmp.ovh/imgs/2022/05/04/c758ac759005c5a8.png')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Web进阶笔记</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="container content">
+
+    
+    <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/CSS/">
+                                <span class="chip bg-color">CSS</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
+                            </a>
+                        
+                            <a href="/tags/Web%E8%BF%9B%E9%98%B6/">
+                                <span class="chip bg-color">Web进阶</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                前端
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-04-12
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    8 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>[TOC]</p>
+<h1 id="✍️Flex布局-x2F-弹性布局"><a href="#✍️Flex布局-x2F-弹性布局" class="headerlink" title="✍️Flex布局/弹性布局"></a>✍️Flex布局/弹性布局</h1><ul>
+<li>是一种浏览器提倡的布局模型</li>
+<li>布局网页更简单、灵活</li>
+<li>避免浮动脱标的问题</li>
+<li>作用：<ul>
+<li>灵活控制块级盒子的布局方式，避免浮动布局中脱离文档流现象发生</li>
+<li>Flex布局非常适合结构化布局</li>
+</ul>
+</li>
+<li>设置方式：<ul>
+<li>父元素添加<code>display: flex;</code>，子元素可以自动的挤压或拉伸</li>
+</ul>
+</li>
+<li>组成部分：<ul>
+<li>弹性容器（添加flex的父元素）</li>
+<li>弹性盒子</li>
+<li>主轴</li>
+<li>侧轴 / 交叉轴</li>
+</ul>
+</li>
+</ul>
+<p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647152759572-4ccbbc13-6885-4233-b977-198a6d0d800c.png" alt="img"></p>
+<h1 id="✍️修改主轴对齐方式"><a href="#✍️修改主轴对齐方式" class="headerlink" title="✍️修改主轴对齐方式"></a>✍️修改主轴对齐方式</h1><ul>
+<li>属性名：<code>justify-content</code></li>
+<li>属性值：</li>
+</ul>
+<p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647155853798-18f4b6de-5a9d-4f2e-b8f0-9b05eeb3e2fe.png" alt="img"></p>
+<h1 id="✍️修改侧轴对齐方式"><a href="#✍️修改侧轴对齐方式" class="headerlink" title="✍️修改侧轴对齐方式"></a>✍️修改侧轴对齐方式</h1><ul>
+<li>属性名：<code>align-items</code>（添加在弹性容器）</li>
+<li>属性名：<code>align-self</code>控制某个弹性盒子在侧轴的对齐方式（添加在弹性盒子）</li>
+<li>属性值：</li>
+</ul>
+<p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647157726511-bd6a7ed1-8e38-4f4b-8cdb-8a408226e2d7.png" alt="img"></p>
+<h1 id="✍️弹性伸缩比"><a href="#✍️弹性伸缩比" class="headerlink" title="✍️弹性伸缩比"></a>✍️弹性伸缩比</h1><ul>
+<li>属性名：<code>flex: 值;</code></li>
+<li>取值分类：<ul>
+<li>数值（整数）</li>
+</ul>
+</li>
+<li>注意：<ul>
+<li>只占用父盒子剩余尺寸（把未设置flex的去掉）</li>
+</ul>
+</li>
+</ul>
+<h1 id="✍️修改主轴方向"><a href="#✍️修改主轴方向" class="headerlink" title="✍️修改主轴方向"></a>✍️修改主轴方向</h1><ul>
+<li>主轴默认是水平方向，侧轴默认是垂直方向</li>
+<li>更改之后，侧轴方向也变化</li>
+<li>属性名：<code>flex: direction</code></li>
+<li>属性值：</li>
+</ul>
+<p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647265690021-da4c92d2-e152-4b61-97b4-aefdde6ef6b0.png" alt="img"></p>
+<ul>
+<li>默认情况下不换行，也就是就算宽度超出，也会自动缩小（弹性）</li>
+<li>换行显示：<code>flex-wrap: wrap;</code><ul>
+<li>属性值默认是nowrap，即不换行</li>
+</ul>
+</li>
+<li>行对齐方式：<code>align-content: ..;</code><ul>
+<li>取值和<code>justify-content</code>基本相同 （没有空白区域全部相同的<code>evenly</code>）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="———————"><a href="#———————" class="headerlink" title="———————"></a><strong>———————</strong></h1><h1 id="✍️rem移动适配-基本使用"><a href="#✍️rem移动适配-基本使用" class="headerlink" title="✍️rem移动适配-基本使用"></a>✍️rem移动适配-基本使用</h1><ul>
+<li>rem单位是相对单位</li>
+<li>rem单位是相对于HTML标签的字号计算结果</li>
+<li>1 rem = 1 HTML字号大小</li>
+</ul>
+<h1 id="✍️rem移动适配-媒体查询"><a href="#✍️rem移动适配-媒体查询" class="headerlink" title="✍️rem移动适配-媒体查询"></a>✍️rem移动适配-媒体查询</h1><ul>
+<li>根据不同的视口宽度，设置不同的根字号</li>
+</ul>
+<p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647321400807-859409b0-3f63-4f2c-83cc-55894518aaa6.png?lastModify=1651668070" alt="img"> <strong>当视口宽度为320px时，根字号为32px</strong></p>
+<h1 id="✍️rem移动适配"><a href="#✍️rem移动适配" class="headerlink" title="✍️rem移动适配"></a>✍️rem移动适配</h1><ul>
+<li><p>目前rem布局方案中，将网页视口宽度等分为10份，html标签的字号为视口宽度的 1/10</p>
+<p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647321661201-c361c29d-0a8d-4b5a-90c1-2b2428fdbd2a.png?lastModify=1651668070" alt="img"></p>
+</li>
+</ul>
+<h1 id="✍️rem布局流程"><a href="#✍️rem布局流程" class="headerlink" title="✍️rem布局流程"></a>✍️rem布局流程</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647321985941-f784e70d-3033-4e0e-abf4-99ebf20e6cfc.png?lastModify=1651668070" alt="img"></p>
+<h1 id="✍️rem-flexible移动适配"><a href="#✍️rem-flexible移动适配" class="headerlink" title="✍️rem-flexible移动适配"></a>✍️rem-flexible移动适配</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647322276750-77b383b7-b0ca-48e7-a6cc-60becd2b1db2.png?lastModify=1651668070" alt="img"></p>
+<h1 id="———————-1"><a href="#———————-1" class="headerlink" title="———————"></a><strong>———————</strong></h1><h1 id="🌾Less"><a href="#🌾Less" class="headerlink" title="🌾Less"></a>🌾Less</h1><ul>
+<li>使用Less语法更快生成CSS代码</li>
+<li>Less是一个CSS预处理器，Less文件后缀是.less</li>
+<li>扩充了CSS语言，使CSS具备一定的逻辑性，计算能力</li>
+<li>注意：浏览器不识别Less代码，目前阶段，网页要引入对应的CSS文件</li>
+<li>单行注释无法生成到CSS文件</li>
+</ul>
+<h1 id="🌾Less运算"><a href="#🌾Less运算" class="headerlink" title="🌾Less运算"></a>🌾Less运算</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647347402972-050d7e63-dced-4417-ad1a-92bd9125f88c.png?lastModify=1651668070" alt="img"></p>
+<h1 id="🌾Less嵌套语法"><a href="#🌾Less嵌套语法" class="headerlink" title="🌾Less嵌套语法"></a>🌾Less嵌套语法</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647347801972-e2763c88-7030-4e8e-92d8-74c3800908bb.png?lastModify=1651668070" alt="img"></p>
+<h1 id="🌾Less变量"><a href="#🌾Less变量" class="headerlink" title="🌾Less变量"></a>🌾Less变量</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647348234292-4ab64b7d-6555-475d-a7bd-65e5603f9c63.png?lastModify=1651668070" alt="img"></p>
+<h1 id="🌾Less导入"><a href="#🌾Less导入" class="headerlink" title="🌾Less导入"></a>🌾Less导入</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647348472425-4ea559dc-2654-41d8-a0ee-63e6e0f6dd3a.png?lastModify=1651668070" alt="img"></p>
+<h1 id="———————-2"><a href="#———————-2" class="headerlink" title="———————"></a><strong>———————</strong></h1><h1 id="💪vw-x2F-vh-体验"><a href="#💪vw-x2F-vh-体验" class="headerlink" title="💪vw / vh 体验"></a>💪vw / vh 体验</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647351044957-6e5c017a-f6b4-4509-948c-f1e1aa01e229.png?lastModify=1651668070" alt="img"></p>
+<h1 id="💪vw-x2F-vh-移动适配"><a href="#💪vw-x2F-vh-移动适配" class="headerlink" title="💪vw / vh 移动适配"></a>💪vw / vh 移动适配</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images\rem%20_%20Less%20_%20vw%20vh\1647351357643-ea13aff7-aa6e-4318-bac3-2a73e74ca61c.png?lastModify=1651668070" alt="img"> <strong>vw 和 vh 不要混用，全面屏会有影响</strong></p>
+<h1 id="———————-3"><a href="#———————-3" class="headerlink" title="———————"></a><em>———————</em></h1><p><strong>#</strong> <strong>✍️媒体查询</strong></p>
+<p><img src="file://C:\Users\cloudmoon\blog\source\images%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%20_%20Bootstrap\1647406586557-c12b6a71-b0a3-413e-9752-e1283dd3f82a.png?lastModify=1651668162" alt="img"></p>
+<h1 id="✍️书写顺序"><a href="#✍️书写顺序" class="headerlink" title="✍️书写顺序"></a>✍️书写顺序</h1><ul>
+<li><img src="file://C:\Users\cloudmoon\blog\source\images%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%20_%20Bootstrap\1647406944763-67027739-61ee-40f2-98d3-ee70cf3d3c47.png?lastModify=1651668162" alt="img"></li>
+<li>媒体查询依然是CSS语法，还具有层叠性</li>
+</ul>
+<h1 id="✍️媒体查询-link"><a href="#✍️媒体查询-link" class="headerlink" title="✍️媒体查询-link"></a>✍️媒体查询-link</h1><p><strong>通过检查不同的媒体查询生效相应的CSS文件</strong> <img src="file://C:\Users\cloudmoon\blog\source\images%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%20_%20Bootstrap\1647407259390-cd8a35fa-f0d6-4cbd-a6d6-7ae2e0647cf8.png?lastModify=1651668162" alt="img"></p>
+<h1 id="✍️媒体查询-隐藏"><a href="#✍️媒体查询-隐藏" class="headerlink" title="✍️媒体查询-隐藏"></a>✍️媒体查询-隐藏</h1><pre class="line-numbers language-none"><code class="language-none">/* 例子 */
+/* 当窗口宽度小于300像素时，隐藏div标签 */
+
+@media (max-width:300px) {
+        div{
+    display:none;
+    }
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="———————-4"><a href="#———————-4" class="headerlink" title="———————"></a><strong>———————</strong></h1><h1 id="🌾Bootstrap简介"><a href="#🌾Bootstrap简介" class="headerlink" title="🌾Bootstrap简介"></a>🌾Bootstrap简介</h1><ul>
+<li>使用bootstrap框架快速开发响应式网页</li>
+</ul>
+<p><img src="file://C:\Users\cloudmoon\blog\source\images%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%20_%20Bootstrap\1647409201471-d015aa0b-7fde-4ca3-8ecc-8b4a92a421d4.png?lastModify=1651668162" alt="img"></p>
+<h1 id="🌾Bootstrap使用步骤"><a href="#🌾Bootstrap使用步骤" class="headerlink" title="🌾Bootstrap使用步骤"></a>🌾Bootstrap使用步骤</h1><p><img src="file://C:\Users\cloudmoon\blog\source\images%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%20_%20Bootstrap\1647410559016-f8bf85be-f935-464c-81ae-e25a714c4a48.png?lastModify=1651668162" alt="img"></p>
+<h1 id="🌾Bootstrap栅格系统"><a href="#🌾Bootstrap栅格系统" class="headerlink" title="🌾Bootstrap栅格系统"></a>🌾Bootstrap栅格系统</h1><p><strong>默认将网页宽度等分为12份</strong> <img src="file://C:\Users\cloudmoon\blog\source\images%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%20_%20Bootstrap\1647411004461-2f9e6573-332e-418e-ab96-6c42e343a47a.png?lastModify=1651668162" alt="img"> <img src="file://C:\Users\cloudmoon\blog\source\images%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BD%91%E9%A1%B5%20_%20Bootstrap\1647411167152-16d99730-add9-4bc1-9b47-2c3b0d2ee4e7.png?lastModify=1651668162" alt="img"></p>
+<h1 id="———————-5"><a href="#———————-5" class="headerlink" title="———————"></a><strong>———————</strong></h1><h1 id="CSS-3"><a href="#CSS-3" class="headerlink" title="CSS 3"></a>CSS 3</h1><h1 id="✍️1-字体图标"><a href="#✍️1-字体图标" class="headerlink" title="✍️1 字体图标"></a>✍️1 字体图标</h1><ul>
+<li>目标：使用字体图标技巧实现网页中简洁的图标效果</li>
+<li>直接将字体图标文件夹放在根目录即可</li>
+<li>步骤：<ul>
+<li>引样式表<ul>
+<li>在head标签内用link标签引用</li>
+</ul>
+</li>
+<li>调用类名<ul>
+<li><code>class="iconfont 字体图标类名"</code>iconfont是固定的，不能改变</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1646917268508-c999992d-f5e6-48bf-a98b-86f5b885b1db.png" alt="img"></p>
+<ul>
+<li>上传矢量图：图库中没有项目所需的图标<ul>
+<li>iconfont网站<strong>上传矢量图</strong>生成字体图标</li>
+<li>将SVG格式图标格式上传</li>
+</ul>
+</li>
+</ul>
+<h1 id="✍️2-过渡"><a href="#✍️2-过渡" class="headerlink" title="✍️2 过渡"></a>✍️2 过渡</h1><ul>
+<li>作用：让元素样式慢慢的变化，常配合hover使用，增强网页交互体验</li>
+<li>属性名：translation</li>
+<li>常见取值：<ul>
+<li><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1646553487613-c40e8d94-7801-42a1-89f8-f396ce4d6c0e-165166798390113.png" alt="img"></li>
+<li>使用具体属性过渡时，格式：属性1 时长，属性2 时长，属性3 时长…..</li>
+</ul>
+</li>
+<li>注意点：<ul>
+<li>过度需要：默认状态 和 hover状态样式不同，才有过渡效果</li>
+<li>translation 属性经常给需要过渡的元素本身加（移入移除都有效果），并非加在hover伪类中</li>
+<li>translation 属性设置在不同元素中，效果不同：<ul>
+<li>给默认状态设置，鼠标移入移除都有过渡效果</li>
+<li>给hover状态设置，鼠标移入有过渡效果，移出没有过渡效果</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="✍️3-平面转换"><a href="#✍️3-平面转换" class="headerlink" title="✍️3 平面转换"></a>✍️3 平面转换</h1><ul>
+<li>使用<code>transform</code>属性实现元素的位移、缩放、旋转等效果</li>
+<li>改变盒子在平面的形态</li>
+<li>2D转换</li>
+</ul>
+<h1 id="✍️4-平面转换-位移"><a href="#✍️4-平面转换-位移" class="headerlink" title="✍️4 平面转换-位移"></a>✍️4 平面转换-位移</h1><ul>
+<li>语法：<code>transform:translate(水平移动距离，垂直移动距离);</code></li>
+<li>取值：取值正负均可<ul>
+<li>像素单位数值</li>
+<li>百分比（参照物为盒子自身尺寸）</li>
+<li>注意：x轴正向为右，y轴正向为下</li>
+</ul>
+</li>
+<li>技巧：<ul>
+<li>translate只给一个数值，表示x轴方向移动距离</li>
+<li>单独设置某个方向的移动距离：<code>translateX() &amp; translate()</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="✍️5-平面转换-旋转"><a href="#✍️5-平面转换-旋转" class="headerlink" title="✍️5 平面转换-旋转"></a>✍️5 平面转换-旋转</h1><ul>
+<li>默认为围绕盒子中心旋转：<ul>
+<li>语法：<code>transform:rotate(角度);</code><ul>
+<li>角度单位是 deg</li>
+</ul>
+</li>
+<li>技巧：取值正负均可<ul>
+<li>正值表示顺时针</li>
+<li>负值表示逆时针</li>
+<li>搭配过渡<code>transition</code>才有效果</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>改变旋转的原点：<ul>
+<li>语法：<code>transform-origin:原点水平位置 原点垂直位置;</code></li>
+<li>不是放在hover伪类里，代替transition</li>
+<li>取值：<ul>
+<li>方位名词：left、top、right、bottom、center</li>
+<li>像素单位数值</li>
+<li>百分比（参照盒子自身尺寸计算）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="✍️6-平面转换-缩放"><a href="#✍️6-平面转换-缩放" class="headerlink" title="✍️6 平面转换-缩放"></a>✍️6 平面转换-缩放</h1><ul>
+<li>使用scale改变元素的尺寸</li>
+<li>实现从中间缩放，若使用宽高来调节，不能从中间缩放</li>
+<li>语法：<code>transform:scale(X轴缩放倍数，Y轴缩放倍数);</code></li>
+<li>技巧：<ul>
+<li>一般情况下，只为scale设置一个值，表示x轴和y轴等比例缩放<ul>
+<li><code>transform:scale(缩放倍数);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="✍️7-平面转换-渐变"><a href="#✍️7-平面转换-渐变" class="headerlink" title="✍️7 平面转换-渐变"></a>✍️7 平面转换-渐变</h1><ul>
+<li>使用 background-image 属性实现渐变背景效果</li>
+</ul>
+<p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647014346739-cbdb0891-2a8f-46cd-9a94-c5c839652909.png" alt="img"></p>
+<ul>
+<li><p>转换中的渐变：</p>
+<ul>
+<li><p><code>background-image: linear-gradient(颜色1，颜色2，.....);</code></p>
+<p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647014472860-db0e2fc4-cf02-47aa-9412-af042dd07f87.png" alt="img"></p>
+<ul>
+<li>这个是从透明到黑色的渐变</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="✍️8-多重转换"><a href="#✍️8-多重转换" class="headerlink" title="✍️8 多重转换"></a>✍️8 多重转换</h1><ul>
+<li>复合属性实现多形态转换</li>
+<li>语法：<code>transform:translate() ratate() scale();</code></li>
+<li>把旋转放在后边，如果放在前面，位移方向会受到影响（改变了坐标轴向）</li>
+<li>注意：其实每个渐变属性都是一种装饰，并不是专门为转换服务</li>
+</ul>
+<hr>
+<h1 id="💪9-空间转换"><a href="#💪9-空间转换" class="headerlink" title="💪9 空间转换"></a>💪9 空间转换</h1><ul>
+<li>使用<code>transform</code>属性实现元素在空间的位移、缩放、旋转等效果</li>
+<li>改变盒子在空间的形态，X、Y、Z轴，Z轴指向自己<ul>
+<li><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647050030035-fc351f7d-37f0-4160-bda9-95948fe4df58.png" alt="img"></li>
+</ul>
+</li>
+<li>3D转换</li>
+</ul>
+<h1 id="💪10-空间转换-位移"><a href="#💪10-空间转换-位移" class="headerlink" title="💪10 空间转换-位移"></a>💪10 空间转换-位移</h1><ul>
+<li>语法<code>transform: translate3d(x,y,z);</code><ul>
+<li><code>transform: translateX();</code></li>
+<li><code>transform: translateY();</code></li>
+<li><code>transform: translateZ();</code></li>
+</ul>
+</li>
+<li>取值：正负均可<ul>
+<li>像素单位数值</li>
+<li>百分比</li>
+</ul>
+</li>
+</ul>
+<h1 id="💪11-空间转换-透视"><a href="#💪11-空间转换-透视" class="headerlink" title="💪11 空间转换-透视"></a>💪11 空间转换-透视</h1><ul>
+<li>属性：（添加给父级）<ul>
+<li><code>perspective: 值;</code></li>
+<li>取值：像素单位数值，数值一般在 800 - 1200</li>
+</ul>
+</li>
+</ul>
+<h1 id="💪12-空间转换-旋转"><a href="#💪12-空间转换-旋转" class="headerlink" title="💪12 空间转换-旋转"></a>💪12 空间转换-旋转</h1><ul>
+<li><code>transform: rotateZ(值);</code>绕Z轴旋转</li>
+<li><code>transform: rotateX(值);</code>绕X轴旋转</li>
+<li><code>transform: rotateY(值);</code>绕Y轴旋转</li>
+<li>自定义旋转轴：<ul>
+<li><code>rotate3d(x,y,z,角度度数)</code>：用来设置自定义旋转轴的位置及旋转角度</li>
+<li>X、Y、Z 取值为 0 - 1 之间的数字</li>
+</ul>
+</li>
+</ul>
+<h1 id="💪13-空间转换-左手法则"><a href="#💪13-空间转换-左手法则" class="headerlink" title="💪13 空间转换-左手法则"></a>💪13 空间转换-左手法则</h1><ul>
+<li>判断旋转方向：<ul>
+<li>左手握住旋转轴，拇指指向正值方向，手指弯曲方向为旋转正值方向</li>
+</ul>
+</li>
+</ul>
+<h1 id="💪14-空间转换-立体呈现"><a href="#💪14-空间转换-立体呈现" class="headerlink" title="💪14 空间转换-立体呈现"></a>💪14 空间转换-立体呈现</h1><ul>
+<li>语法：（添加给父级）<ul>
+<li><code>transform-style：preserve-3d;</code></li>
+<li>使子元素处于真正3D空间</li>
+<li>默认值flat，表示子元素处于2D平面内呈现</li>
+</ul>
+</li>
+</ul>
+<h1 id="💪15-空间转换-缩放"><a href="#💪15-空间转换-缩放" class="headerlink" title="💪15 空间转换-缩放"></a>💪15 空间转换-缩放</h1><ul>
+<li>语法：<ul>
+<li><code>transform：scaleX(倍数);</code></li>
+<li><code>transform：scaleY(倍数);</code></li>
+<li><code>transform：scaleZ(倍数);</code></li>
+<li><code>transform：scale3d(x, y, z);</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="🌾17-动画"><a href="#🌾17-动画" class="headerlink" title="🌾17 动画"></a>🌾17 动画</h1><ul>
+<li>过渡只能实现两个状态之间的变化</li>
+<li>动画：实现多个效果之间的变化过程，动画过程可控（重复播放，最终动画，是否暂停）</li>
+<li>使用 animation 添加动画效果<ul>
+<li>构成动画的最小单位： 帧或动画帧</li>
+</ul>
+</li>
+<li>定义步骤：<ul>
+<li>动画实现步骤：<ul>
+<li>定义动画：</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647078649185-d83499f3-5d8b-43b4-bf35-cd29d911716e.png" alt="img"></p>
+<pre><code>     - 使用动画：`animation：动画名称 动画花费时长;`
+        - 动画使用既可以复合也可以多组，使用逗号隔开。
+        - `animation：动画名称 动画花费时长，动画名称 动画花费时长...... ;`
+</code></pre>
+<h1 id="🌾18-from-to"><a href="#🌾18-from-to" class="headerlink" title="🌾18 from-to"></a>🌾18 from-to</h1><ul>
+<li><code>from{CSS代码}</code></li>
+<li><code>to{CSS代码}</code><ul>
+<li>如果动画开始状态和盒子默认状态相同，可以省略开头的<code>from{CSS代码}</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="🌾19-百分比"><a href="#🌾19-百分比" class="headerlink" title="🌾19 百分比"></a>🌾19 百分比</h1><ul>
+<li>百分比指的是动画总时长的占比</li>
+<li>从一个到另一个的过渡时长</li>
+</ul>
+<h1 id="🌾20-animation复合属性"><a href="#🌾20-animation复合属性" class="headerlink" title="🌾20 animation复合属性"></a>🌾20 animation复合属性</h1><ul>
+<li><code>animation：**动画名称 动画时长** 速度曲线 延迟时间 重复次数 动画方向 执行完毕状态;</code></li>
+<li>注意：<ul>
+<li>动画名称 和 动画时长 必须赋值</li>
+<li>取值不分先后顺序</li>
+<li>如果有两个时间值，第一个时间表示动画时长，第二个时间表示延迟时间</li>
+</ul>
+</li>
+<li>例子：<ul>
+<li>速度曲线：<ul>
+<li><code>linear</code>表示匀速 </li>
+<li><code>step(数值)</code>表示将时间分为几部分，分步播放</li>
+</ul>
+</li>
+<li>重复次数：<ul>
+<li>写多大就重复几次</li>
+<li>写<code>infinite</code>表示无限循环</li>
+</ul>
+</li>
+<li>动画方向：<ul>
+<li><code>alternate</code>表示轮流播放，也就是方向变的交替播放</li>
+</ul>
+</li>
+<li>执行完毕状态：<ul>
+<li>必须把 重复次数 和 动画方向 去掉</li>
+<li><code>backwards</code>是默认值，也就是返回初始状态</li>
+<li><code>forwards</code>表示停留在最终的状态</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="🌾21-animation拆分写法"><a href="#🌾21-animation拆分写法" class="headerlink" title="🌾21 animation拆分写法"></a>🌾21 animation拆分写法</h1><p><img src="C:\Users\cloudmoon\blog\source\images\Web进阶\1647083115943-608ee8a0-e81d-472f-98cd-8e4c4d29c9e7.png" alt="img"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Cloudmoon</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://cloudmoon.github.io/2022/04/12/web-jin-jie/">http://cloudmoon.github.io/2022/04/12/web-jin-jie/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Cloudmoon</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/CSS/">
+                                    <span class="chip bg-color">CSS</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
+                                </a>
+                            
+                                <a href="/tags/Web%E8%BF%9B%E9%98%B6/">
+                                    <span class="chip bg-color">Web进阶</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/04/12/web-jin-jie/">
+                    <div class="card-image">
+                        
+                        <img src="https://s3.bmp.ovh/imgs/2022/05/04/c758ac759005c5a8.png" class="responsive-img" alt="Web进阶笔记">
+                        
+                        <span class="card-title">Web进阶笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            黑马程序员Bilibili课程跟听笔记
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CSS/">
+                        <span class="chip bg-color">CSS</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/Web%E8%BF%9B%E9%98%B6/">
+                        <span class="chip bg-color">Web进阶</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/25/css-bi-ji/">
+                    <div class="card-image">
+                        
+                        <img src="https://s3.bmp.ovh/imgs/2022/05/04/3403b8d287a9b64c.jpg" class="responsive-img" alt="CSS基础笔记">
+                        
+                        <span class="card-title">CSS基础笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            黑马程序员Bilibili课程跟听笔记
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%89%8D%E7%AB%AF/" class="post-category">
+                                    前端
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/CSS/">
+                        <span class="chip bg-color">CSS</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9F%BA%E7%A1%80/">
+                        <span class="chip bg-color">基础</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('40')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Cloudmoon<br />'
+            + '文章作者: Cloudmoon<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者Cloudmoon所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">Cloudmoon</a>
+            |&nbsp;Powered by&nbsp;<a href="javascript:;" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="javascript:;" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">11.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2022";
+                    var startMonth = "5";
+                    var startDate = "4";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/CloudmoonOCUS" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:f356660222@foxmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=356660222&website=www.oicqzone.com" class="tooltipped" target="_blank" data-tooltip="QQ联系我" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
