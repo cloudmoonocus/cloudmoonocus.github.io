@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML基础笔记, Cloudmoon">
+    <meta name="keywords" content="HTML基础笔记, 前端,HTML,CSS,JavaScript,新手,笔记,博客,基础">
     <meta name="description" content="Cloudmoon的个人前端技术博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>HTML基础笔记 | Cloudmoon</title>
+    <title>HTML基础笔记 | Cd.moon技术博客</title>
     <link rel="icon" type="image/jpeg" href="https://s3.bmp.ovh/imgs/2022/05/04/6cd9c94cf5590833.jpeg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -55,7 +55,7 @@
                     
                     <img src="https://s3.bmp.ovh/imgs/2022/05/04/6cd9c94cf5590833.jpeg" class="logo-img" alt="LOGO">
                     
-                    <span class="logo-span">Cloudmoon</span>
+                    <span class="logo-span">Cd.moon技术博客</span>
                 </a>
             </div>
             
@@ -154,7 +154,7 @@
         
         <img src="https://s3.bmp.ovh/imgs/2022/05/04/6cd9c94cf5590833.jpeg" class="logo-img circle responsive-img">
         
-        <div class="logo-name">Cloudmoon</div>
+        <div class="logo-name">Cd.moon技术博客</div>
         <div class="logo-desc">
             
             Cloudmoon的个人前端技术博客
@@ -246,7 +246,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/CloudmoonOCUS" class="waves-effect waves-light" target="_blank">
+            <a href="https://github.com/cloudmoonocus" class="waves-effect waves-light" target="_blank">
                 <i class="fab fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -303,7 +303,7 @@
     }
 </style>
 
-<a href="https://github.com/CloudmoonOCUS" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://github.com/cloudmoonocus" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -337,10 +337,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -349,16 +443,16 @@
                     
                     <div class="article-tag">
                         
+                            <a href="/tags/HTML/">
+                                <span class="chip bg-color">HTML</span>
+                            </a>
+                        
                             <a href="/tags/%E7%AC%94%E8%AE%B0/">
                                 <span class="chip bg-color">笔记</span>
                             </a>
                         
                             <a href="/tags/%E5%9F%BA%E7%A1%80/">
                                 <span class="chip bg-color">基础</span>
-                            </a>
-                        
-                            <a href="/tags/HTML/">
-                                <span class="chip bg-color">HTML</span>
                             </a>
                         
                     </div>
@@ -421,14 +515,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>[TOC]</p>
-<h2 id="一、排版标签"><a href="#一、排版标签" class="headerlink" title="一、排版标签"></a>一、排版标签</h2><ol>
+                <h2 id="一、排版标签"><a href="#一、排版标签" class="headerlink" title="一、排版标签"></a>一、排版标签</h2><ol>
 <li>标签由&lt;、&gt;、\、英文单词或字母组成，并且把标签中&lt;&gt;包括起来的英文单词或字母称为标签名</li>
 <li>常见标签由两部分组成，我们称之为:双标签，前部分叫开始标签，后部分叫结束标签，两部分之间包裹内容</li>
 <li>少数标签由一部分组成，我们称之为:单标签自成一体,无法包裹内容</li>
 <li><strong>（标签）</strong>标题标签<code>&lt;h1&gt;...&lt;/h1&gt;&lt;h2&gt;...&lt;\h2&gt;........&lt;h6&gt;...&lt;\h6&gt;</code> 共六级 由大到小</li>
-<li><strong>（标签）</strong><code>&lt;p&gt;....&lt;/p&gt;</code>  段落标签  双标签  有头有尾 放入body里</li>
-<li><strong>（标签）</strong><code>&lt;br&gt;</code>换行标签 单标签  文字强制换行</li>
+<li><strong>（标签）</strong><code>&lt;p&gt;....&lt;/p&gt;</code> 段落标签 双标签 有头有尾 放入 body 里</li>
+<li><strong>（标签）</strong><code>&lt;br&gt;</code>换行标签 单标签 文字强制换行</li>
 <li><strong>（标签）</strong><code>&lt;hr&gt;</code>水平分割线 可用作不同主体之间的分隔 加入一条线</li>
 </ol>
 <hr>
@@ -441,11 +534,11 @@
 <h2 id="三、媒体标签"><a href="#三、媒体标签" class="headerlink" title="三、媒体标签"></a>三、媒体标签</h2><ol>
 <li><strong>（标签，属性）</strong><code>&lt;img src="" alt="" title=""&gt;</code>** 加入图片**<ul>
 <li>当网页和图片在同一目录下时，路径直接写图片名字即可</li>
-<li>alt为替换文本，当图片加载失败时以alt的文本代替</li>
+<li>alt 为替换文本，当图片加载失败时以 alt 的文本代替</li>
 <li>title：当鼠标悬停在图片上方时出现的文本</li>
 </ul>
 </li>
-<li><strong>（属性）</strong><code>width/height</code>**：设置图片的宽度和高度	**<ul>
+<li><strong>（属性）</strong><code>width/height</code>**：设置图片的宽度和高度 **<ul>
 <li>只设置一个，另一个会自动等比例缩放</li>
 <li>都设置，若设置不当图片会变形</li>
 </ul>
@@ -467,7 +560,7 @@
 </li>
 <li><strong>（标签）</strong><code>&lt;audio src=""&gt;&lt;/audio&gt;</code><strong>：音频标签</strong><ol>
 <li>属性：<ul>
-<li>sec 地址 </li>
+<li>sec 地址</li>
 <li>controls 显示播放控件</li>
 <li>autoplay 自动播放</li>
 <li>loop 循环播放</li>
@@ -479,7 +572,7 @@
 <li>属性：<ul>
 <li>sec 地址</li>
 <li>controls 显示播放控件</li>
-<li>autoplay 自动播放(谷歌需配合muted实现静音播放)</li>
+<li>autoplay 自动播放(谷歌需配合 muted 实现静音播放)</li>
 <li>oop 循环播放</li>
 </ul>
 </li>
@@ -490,8 +583,8 @@
 <li><strong>（标签，属性）</strong><code>&lt;a href="./目标网页.html"&gt;内容&lt;/a&gt;：超链接、锚标签、a标签</code><ul>
 <li>地址为 **# **是空连接</li>
 <li>属性：<ul>
-<li>target：控制目标网页的打开方式 <ul>
-<li>“_self”：默认值，覆盖原网页 </li>
+<li>target：控制目标网页的打开方式<ul>
+<li>“_self”：默认值，覆盖原网页</li>
 <li>“_blank”：在新窗口跳转</li>
 </ul>
 </li>
@@ -512,8 +605,8 @@
 </li>
 <li><strong>（标签）无序列表：</strong><code>ul</code>标签<ul>
 <li>注意点：<ul>
-<li>ul标签内只允许有li标签</li>
-<li>li标签可以包含任何内容</li>
+<li>ul 标签内只允许有 li 标签</li>
+<li>li 标签可以包含任何内容</li>
 <li>列表默认开头为圆点<code>·</code></li>
 </ul>
 </li>
@@ -521,21 +614,21 @@
 </li>
 <li><strong>（标签）有序列表：</strong><code>ol</code>标签<ul>
 <li>注意点：<ul>
-<li>ol标签内只允许有li标签</li>
-<li>li标签可以包含任何内容</li>
+<li>ol 标签内只允许有 li 标签</li>
+<li>li 标签可以包含任何内容</li>
 <li>列表默认开头为序号标识</li>
 </ul>
 </li>
 </ul>
 </li>
-<li><strong>（标签）自定义列表：</strong><code>dl</code> <strong>标签</strong><br>  -注意点：dl标签内只允许有dt、dd标签<br>  - dt、dd标签可以包含任何内容<br>      - dd标签前默认显示缩进效果<br>      - dt标签表示自定义列表的主题<br>      - dd标签表示自定义列表的针对主题的每一项内容</li>
+<li><strong>（标签）自定义列表：</strong><code>dl</code> <strong>标签</strong> -注意点：dl 标签内只允许有 dt、dd 标签 - dt、dd 标签可以包含任何内容 - dd 标签前默认显示缩进效果 - dt 标签表示自定义列表的主题 - dd 标签表示自定义列表的针对主题的每一项内容</li>
 </ol>
 <hr>
 <h2 id="六、表格"><a href="#六、表格" class="headerlink" title="六、表格"></a>六、表格</h2><ol>
 <li><strong>以行和列形式，整齐地展示数据</strong></li>
 <li><strong>（标签）基本标签 ：</strong><ul>
-<li><code>table</code>（表格整体，包括多个tr）</li>
-<li><code>tr</code>(表格每行，可用于包裹td)</li>
+<li><code>table</code>（表格整体，包括多个 tr）</li>
+<li><code>tr</code>(表格每行，可用于包裹 td)</li>
 <li><code>td</code>（表格单元格，可用于包裹内容）</li>
 <li>table &gt; tr &gt; td</li>
 </ul>
@@ -544,7 +637,7 @@
 <li><code>border</code>：边框宽度</li>
 <li><code>width</code> ：表格宽度</li>
 <li><code>height</code>：表格高度</li>
-<li>实际开发时推荐使用CSS设置效果</li>
+<li>实际开发时推荐使用 CSS 设置效果</li>
 </ul>
 </li>
 <li><strong>（标签）表格标题和表头单元格标签：</strong><ul>
@@ -557,9 +650,9 @@
 <li>表示一列小标题，通常用于表格第一行，默认内部文字加粗并居中显示</li>
 </ul>
 </li>
-<li>注意点：caption标签书写在table标签内部</li>
-<li>th标签书写在tr标签内部<ul>
-<li>用于替换td标签</li>
+<li>注意点：caption 标签书写在 table 标签内部</li>
+<li>th 标签书写在 tr 标签内部<ul>
+<li>用于替换 td 标签</li>
 </ul>
 </li>
 </ul>
@@ -570,7 +663,7 @@
 <li><code>thead</code>：表格头部</li>
 <li><code>tbody</code>：表格主题</li>
 <li><code>tfoot</code>：表格底部</li>
-<li>注意点：表格的结构标签内部可包含tr标签，表格的结构标签可以省略</li>
+<li>注意点：表格的结构标签内部可包含 tr 标签，表格的结构标签可以省略</li>
 </ul>
 </li>
 <li><strong>（属性）合并单元格：</strong></li>
@@ -650,25 +743,25 @@
 <hr>
 <h2 id="七、表单"><a href="#七、表单" class="headerlink" title="七、表单"></a>七、表单</h2><ol>
 <li><strong>例如：搜索框、填写信息框</strong></li>
-<li><strong>（标签）imput系列标签：</strong><ul>
-<li><strong>（属性）type属性：</strong><br>- （属性值）①：<code>text </code>-&gt; 文本框，用于输入单行文本<br>    - （属性值）②：<code>password</code> -&gt; 密码框，用于输入密码<br>    - （属性值）③：<code>radio</code> -&gt; 单选框，用于多选一<br>    - （属性值）④：<code>checkbox</code>-&gt; 多选框，用于多选多<br>    - （属性值）⑤：<code>file</code> -&gt; 文件选择，用于之后上传文件<br>    - （属性值）⑥：<code>submit</code> -&gt; 提交摁钮，用于提交<br>    - （属性值）⑦：<code>reset</code>-&gt; 重置摁钮，用于重置<br>    - （属性值）⑧：<code>button</code> -&gt; 普通摁钮，默认无功能，之后配合JS添加功能</li>
-<li><strong>（属性）</strong>placeholder`属性：【配合txt、password使用】<ul>
+<li><strong>（标签）imput 系列标签：</strong><ul>
+<li><strong>（属性）type 属性：</strong> - （属性值）①：<code>text </code>-&gt; 文本框，用于输入单行文本 - （属性值）②：<code>password</code> -&gt; 密码框，用于输入密码 - （属性值）③：<code>radio</code> -&gt; 单选框，用于多选一 - （属性值）④：<code>checkbox</code>-&gt; 多选框，用于多选多 - （属性值）⑤：<code>file</code> -&gt; 文件选择，用于之后上传文件 - （属性值）⑥：<code>submit</code> -&gt; 提交摁钮，用于提交 - （属性值）⑦：<code>reset</code>-&gt; 重置摁钮，用于重置 - （属性值）⑧：<code>button</code> -&gt; 普通摁钮，默认无功能，之后配合 JS 添加功能</li>
+<li><strong>（属性）</strong>placeholder`属性：【配合 txt、password 使用】<ul>
 <li>占位符 显示提示字符</li>
 </ul>
 </li>
-<li><strong>（属性）</strong><code>name </code> 属性：【配合radio使用】<ul>
-<li>分组，有相同name值的单选框为一组，一组中同时只能有一个被选中</li>
+<li><strong>（属性）</strong><code>name </code> 属性：【配合 radio 使用】<ul>
+<li>分组，有相同 name 值的单选框为一组，一组中同时只能有一个被选中</li>
 </ul>
 </li>
-<li><strong>（属性）</strong><code>checked</code>属性：【配合radio、checkbox使用】<ul>
+<li><strong>（属性）</strong><code>checked</code>属性：【配合 radio、checkbox 使用】<ul>
 <li>默认选中，没有属性值</li>
 </ul>
 </li>
-<li><strong>（属性）</strong><code>mutiple</code>属性：【配合file使用】<ul>
+<li><strong>（属性）</strong><code>mutiple</code>属性：【配合 file 使用】<ul>
 <li>多文件选择</li>
 </ul>
 </li>
-<li><strong>（属性）</strong><code>value</code>属性：【配合submit、reset、button使用】<ul>
+<li><strong>（属性）</strong><code>value</code>属性：【配合 submit、reset、button 使用】<ul>
 <li>更改摁钮中的内容</li>
 </ul>
 </li>
@@ -678,10 +771,10 @@
 </li>
 </ul>
 </li>
-<li>（标签）button标签：</li>
+<li>（标签）button 标签：</li>
 </ol>
 <ul>
-<li>谷歌浏览器中button默认是提交摁钮，button标签是双标签，更便于包裹其他内容：文字、图片等<ul>
+<li>谷歌浏览器中 button 默认是提交摁钮，button 标签是双标签，更便于包裹其他内容：文字、图片等<ul>
 <li>（属性）<code>submit</code>属性：提交至服务器</li>
 <li>（属性）<code>reset</code>属性：重置信息</li>
 <li>（属性）<code>button</code>属性：普通摁钮</li>
@@ -689,7 +782,7 @@
 </li>
 </ul>
 <ol start="4">
-<li>（标签）select标签：<ul>
+<li>（标签）select 标签：<ul>
 <li>下拉菜单的整体</li>
 <li>（标签）<code>option</code>标签：<ul>
 <li>下拉菜单的每一项</li>
@@ -701,7 +794,7 @@
 </li>
 </ul>
 </li>
-<li><strong>（标签）textarea标签：</strong></li>
+<li><strong>（标签）textarea 标签：</strong></li>
 </ol>
 <ul>
 <li>文本域标签，可输入多行文本的控件<ul>
@@ -718,30 +811,30 @@
 </li>
 </ul>
 <ol start="6">
-<li><strong>（标签）label标签：</strong></li>
+<li><strong>（标签）label 标签：</strong></li>
 </ol>
 <ul>
-<li>使用方法①：<br>1. <code>&lt;input type="radio" id="xxx"&gt;&lt;label for="xxx"&gt;选项名称&lt;/label&gt;</code><br>1. 使用label标签把内容(如文本)包裹起来<br>1. 在表单标签上添加id属性<br>1. 在label标签的for属性中设置对应的id属性值</li>
-<li>使用方法②:<br>1. <code>&lt;label&gt;&lt;input type="radio"&gt;选项名称&lt;/label&gt;</code><br>1. 直接使用label标签把内容(如文本)和表单标签一起包裹起来<br>1. 需要把label标签的for属 性删除即可</li>
+<li>使用方法 ①： 1. <code>&lt;input type="radio" id="xxx"&gt;&lt;label for="xxx"&gt;选项名称&lt;/label&gt;</code> 1. 使用 label 标签把内容(如文本)包裹起来 1. 在表单标签上添加 id 属性 1. 在 label 标签的 for 属性中设置对应的 id 属性值</li>
+<li>使用方法 ②: 1. <code>&lt;label&gt;&lt;input type="radio"&gt;选项名称&lt;/label&gt;</code> 1. 直接使用 label 标签把内容(如文本)和表单标签一起包裹起来 1. 需要把 label 标签的 for 属 性删除即可</li>
 </ul>
 <hr>
 <h2 id="八、语义化标签"><a href="#八、语义化标签" class="headerlink" title="八、语义化标签"></a>八、语义化标签</h2><ol>
 <li><strong>没有语义的布局标签</strong><ul>
 <li>场景：实际开发网页会大量使用 div 和 span 两个没有语义的标签</li>
-<li><strong>（标签）</strong><code>div</code>标签：一行只显示一个<br>- 独占一行<br>- 自动换行</li>
+<li><strong>（标签）</strong><code>div</code>标签：一行只显示一个 - 独占一行 - 自动换行</li>
 <li><strong>（标签）</strong><code>span</code>标签：一行可以显示多个</li>
 </ul>
 </li>
 <li><strong>有语义的布局标签</strong><ul>
 <li>手机端网页制作时使用</li>
-<li>在HTML5新版本，推出一些有语义的标签使用</li>
+<li>在 HTML5 新版本，推出一些有语义的标签使用</li>
 <li>（标签）<code>header</code>标签： 网页头部</li>
-<li>（标签）<code>nav</code>标签：    网页导航</li>
+<li>（标签）<code>nav</code>标签： 网页导航</li>
 <li>（标签）<code>footer</code>标签： 网页底部</li>
-<li>（标签）<code>aside</code>标签：  网页侧边栏</li>
+<li>（标签）<code>aside</code>标签： 网页侧边栏</li>
 <li>（标签）<code>section</code>标签：网页区块</li>
 <li>（标签）<code>article</code>标签：网页文章</li>
-<li>注意点：以上显示与div标签一致，但是比div标签多了不同的语义</li>
+<li>注意点：以上显示与 div 标签一致，但是比 div 标签多了不同的语义</li>
 </ul>
 </li>
 </ol>
@@ -827,16 +920,16 @@
                     
                         <div class="article-tag">
                             
+                                <a href="/tags/HTML/">
+                                    <span class="chip bg-color">HTML</span>
+                                </a>
+                            
                                 <a href="/tags/%E7%AC%94%E8%AE%B0/">
                                     <span class="chip bg-color">笔记</span>
                                 </a>
                             
                                 <a href="/tags/%E5%9F%BA%E7%A1%80/">
                                     <span class="chip bg-color">基础</span>
-                                </a>
-                            
-                                <a href="/tags/HTML/">
-                                    <span class="chip bg-color">HTML</span>
                                 </a>
                             
                         </div>
@@ -994,6 +1087,30 @@
     
 
     
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NjMyMi8zMjc4NQ==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j,
+                    e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
+
+    
 
     
 
@@ -1043,16 +1160,16 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/CSS/">
-                        <span class="chip bg-color">CSS</span>
-                    </a>
-                    
                     <a href="/tags/%E7%AC%94%E8%AE%B0/">
                         <span class="chip bg-color">笔记</span>
                     </a>
                     
                     <a href="/tags/%E5%9F%BA%E7%A1%80/">
                         <span class="chip bg-color">基础</span>
+                    </a>
+                    
+                    <a href="/tags/CSS/">
+                        <span class="chip bg-color">CSS</span>
                     </a>
                     
                 </div>
@@ -1100,16 +1217,16 @@
                 
                 <div class="card-action article-tags">
                     
+                    <a href="/tags/HTML/">
+                        <span class="chip bg-color">HTML</span>
+                    </a>
+                    
                     <a href="/tags/%E7%AC%94%E8%AE%B0/">
                         <span class="chip bg-color">笔记</span>
                     </a>
                     
                     <a href="/tags/%E5%9F%BA%E7%A1%80/">
                         <span class="chip bg-color">基础</span>
-                    </a>
-                    
-                    <a href="/tags/HTML/">
-                        <span class="chip bg-color">HTML</span>
                     </a>
                     
                 </div>
@@ -1150,7 +1267,7 @@
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + '来源: Cloudmoon<br />'
+            + '来源: Cd.moon技术博客<br />'
             + '文章作者: Cloudmoon<br />'
             + '文章链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者Cloudmoon所有，任何形式的转载都请注明出处。';
@@ -1178,6 +1295,100 @@
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h1,h2,h3'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1,h2,h3').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
@@ -1439,6 +1650,10 @@ $(function () {
 
     
 
+	
+	    <div style="position:fixed;bottom:125px;right:9px;cursor: pointer;">
+	        <a title="兔小巢" target="_blank" rel="noopener" href="https://support.qq.com/products/405713"><img src="/medias/contact.png"></a>
+	    </div>
 	
     
     <script type="text/javascript" color="0,0,255"
